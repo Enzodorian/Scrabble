@@ -1,0 +1,114 @@
+<style>
+
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        td, th {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        tr {
+            height: 50px;
+        }
+ 
+p {
+    color: darkgreen;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* Style pour les inputs */
+input {
+    font-size: 16px;               /* Taille de police */
+    padding: 10px;                 /* Espace interne (marge à l'intérieur de l'input) */
+    margin: 10px 0;                /* Marge autour de l'input */
+    border: 2px solid #ccc;        /* Bordure de couleur grise */
+    border-radius: 5px;            /* Coins arrondis */
+    outline: none;                 /* Supprime le contour de focus par défaut */
+    width: 100%;                   /* L'input prend toute la largeur de son parent */
+    box-sizing: border-box;        /* Inclut la bordure et le padding dans la largeur totale */
+}
+
+/* Style général pour le bouton submit */
+input[type="submit"] {
+    background-color: #46aefe; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement intérieur */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Changement du curseur au survol */
+    transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+}
+/* Effet au focus de l'input */
+input:focus {
+    border-color: #4CAF50;         /* Bordure verte lorsqu'on clique sur l'input */
+    background-color: #f0f0f0;     /* Changement de fond lors du focus */
+}
+
+/* Style pour les boutons */
+button {
+    font-size: 16px;               /* Taille de police */
+    padding: 10px 20px;            /* Espace interne (marge à l'intérieur du bouton) */
+    margin: 10px 0;                /* Marge autour du bouton */
+    background-color: #007BFF;     /* Couleur de fond bleue */
+    color: white;                  /* Texte en blanc */
+    border: none;                  /* Pas de bordure */
+    border-radius: 5px;            /* Coins arrondis */
+    cursor: pointer;               /* Le curseur devient une main au survol */
+    transition: background-color 0.3s ease; /* Animation pour le changement de couleur */
+}
+
+/* Effet au survol du bouton */
+button:hover {
+    background-color: #0056b3;     /* Couleur de fond bleue plus foncée au survol */
+}
+
+/* Effet lors du clic du bouton */
+button:active {
+    background-color: #004085;     /* Couleur plus foncée lors du clic */
+}
+/* Style général du body */
+body {
+    font-family: 'Arial', sans-serif;        /* Police sans-serif pour une lisibilité optimale */
+    font-size: 16px;                         /* Taille de police de base */
+    line-height: 1.6;                        /* Hauteur de ligne pour aérer le texte */
+    margin: 0;                               /* Enlever les marges par défaut */
+    padding: 0;                              /* Enlever les espacements par défaut */
+    background-color: #f4f4f4;               /* Fond gris clair */
+    color: #333;                             /* Texte de couleur sombre pour un bon contraste */
+    display: flex;                           /* Utiliser flexbox pour la mise en page */
+    flex-direction: column;                  /* Disposer les éléments du body verticalement */
+    justify-content: center;                 /* Centrer les éléments verticalement */
+    align-items: center;                     /* Centrer les éléments horizontalement */
+    min-height: 100vh;                       /* S'assurer que le body prend toute la hauteur de la fenêtre */
+}
+
+/* Optionnel : une légère ombre portée pour donner de la profondeur */
+body {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+}
+
+/* Style pour les titres (h1, h2, etc.) */
+h1, h2, h3, h4, h5, h6 {
+    color: #222;                             /* Couleur de texte légèrement plus foncée pour les titres */
+    margin-bottom: 20px;                      /* Espacement sous les titres */
+}
+
+/* Style pour les liens */
+a {
+    color: #007BFF;                          /* Couleur bleue pour les liens */
+    text-decoration: none;                    /* Supprimer le soulignement */
+    text-align: center;
+}
+
+a:hover {
+    color: #0056b3;                          /* Couleur plus foncée au survol */
+    text-decoration: underline;              /* Souligner au survol */
+}
+</style>

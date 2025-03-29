@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ComboBox Dynamique</title>
+<script>
+function updateCombo(combo1, combo2) {
+    let selectedValue = combo1.value;
+
+    // Réactiver toutes les options du deuxième ComboBox
+    for (let option of combo2.options) {
+        option.disabled = false;
+    }
+
+    // Désactiver l'option sélectionnée dans l'autre ComboBox, sauf si c'est l'option vide
+    if (selectedValue) {
+        let optionToDisable = combo2.querySelector(`option[value="${selectedValue}"]`);
+        if (optionToDisable) optionToDisable.disabled = true;
+    }
+}
+
+</script>
+</head>
+<body>
+
+<label for="combo1">Choix 1 :</label>
+<select id="combo1" onchange="updateCombo(combo1, combo2)">
+    <option value="">-- Sélectionnez --</option>
+    <option value="A">Option A</option>
+    <option value="B">Option B</option>
+    <option value="C">Option C</option>
+</select>
+
+<label for="combo2">Choix 2 :</label>
+<select id="combo2" onchange="updateCombo(combo2, combo1)">
+    <option value="">-- Sélectionnez --</option>
+    <option value="A">Option A</option>
+    <option value="C">Option C</option>
+    <option value="B">Option B</option>
+</select>
+
+
+
+</body>
+</html>
